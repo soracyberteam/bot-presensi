@@ -10,3 +10,5 @@ Usage :
 1. Put ur username & password in skansaba.py file
 2. Run $ python3 skansaba.py
 3. Now the bot should be running. Enjoy.
+
+Coded by M. Khidhir Ibrahim (c) 2020
