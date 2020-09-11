@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 #ur credentials here :)
-usr = "xxxxx"
-pwd = "xxxxx"
+usr = "xxxx"
+pwd = "xxxx"
 
 class BotPresensi():
 	'''
@@ -26,7 +26,7 @@ class BotPresensi():
 		print(self.__doc__)
 
 		if self.doLogin():
-			print("[*] Login Success")
+			print("[*] Logged in as %s" % self.username)
 			self.getEvents()
 			for i in self.events:
 				now		= self.getDateTime()
@@ -46,7 +46,7 @@ class BotPresensi():
 							break
 					else:
 						sys.stdout.write("\r[*] Waiting for next submit {}:{} != {}:{}".format(now.hour, now.minute, i_time.hour, i_time.minute))
-
+			print("[*] Task for today is done.")
 		else:
 			print("Check ur credentials plz :)")
 
